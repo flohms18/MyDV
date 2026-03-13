@@ -1,3 +1,10 @@
+
+
+
+.intro-container {
+    background-color: red;
+}
+
 .intro-section {
     min-height: 75vh;
     
@@ -5,4 +12,8 @@
 
 .intro-section-button {
     background-color: red;
+    text-decoration: none;
+    border-style: none;
+    width: 10rem;
+    font-size: 18px;
 }
