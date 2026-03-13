@@ -26,3 +26,7 @@
 .nav-link {
     width: 12.5rem;
 }
+
+.para-text-section {
+    min-height: 25vh;
+}
