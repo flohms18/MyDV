@@ -9,3 +9,6 @@ def index(request):
 
 def glossary(request):
     return render(request, 'glossary.html')
+
+def about(request):
+    return render(request, 'about.html')
