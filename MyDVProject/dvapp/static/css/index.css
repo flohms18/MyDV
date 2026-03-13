@@ -23,10 +23,10 @@
     font-size: 18px;
 }
 
-.nav-link {
+.nav-link-category {
     width: 12.5rem;
 }
 
 .para-text-section {
-    min-height: 25vh;
+    min-height: 20vh;
 }
