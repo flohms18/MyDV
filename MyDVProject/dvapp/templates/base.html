@@ -3,6 +3,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
         {% block extra_css %}{% endblock %}
         <title>
             MyProject
