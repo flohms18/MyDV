@@ -4,3 +4,8 @@
     --white-color : #f8f9fa;
 
 }
+
+.navbar-info {
+    background-color: var(--dark-color);
+
+}

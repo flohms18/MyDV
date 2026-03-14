@@ -6,7 +6,7 @@
 }
 
 .intro-container {
-    background-color: red;
+    background-color: var(--dark-color);
 }
 
 .intro-section {
@@ -23,8 +23,9 @@
 }
 
 .nav-link-category {
-    width: 12.5rem;
+    width: 20rem;
     text-decoration: none;
+    display: inline-block;
 }
 
 .para-text-section {
