@@ -5,7 +5,6 @@
 
 }
 
-
 .intro-container {
     background-color: red;
 }
@@ -25,6 +24,7 @@
 
 .nav-link-category {
     width: 12.5rem;
+    text-decoration: none;
 }
 
 .para-text-section {
