@@ -5,28 +5,48 @@
 
 }
 
+body {
+    background-color: var(--white-color);
+}
+
+
 .intro-container {
     background-color: var(--dark-color);
 }
 
 .intro-section {
-    min-height: 50vh;
+    min-height: 60vh;
     
 }
 
 .intro-section-button {
-    background-color: red;
+    background-color: var(--dark-color);
     text-decoration: none;
     border-style: none;
     width: 10rem;
     font-size: 18px;
+    color: var(--white-color);
 }
 
 .nav-link-category {
     width: 20rem;
     text-decoration: none;
     display: inline-block;
+    color: var(--dark-color);
 }
+
+.nav-link-category:hover {
+    color: var(--violet-color);
+    transition: 0.5s ease;
+}
+
+.navbar-category {
+    background-color: #fff;
+    color: var(--dark-color);
+    border-bottom:1px solid #e0e0e0;
+}
+
+
 
 .para-text-section {
     min-height: 20vh;
