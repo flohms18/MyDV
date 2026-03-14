@@ -51,3 +51,7 @@ body {
 .para-text-section {
     min-height: 20vh;
 }
+
+.wallpaper-section {
+    min-height: 30vh;
+}
