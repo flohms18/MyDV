@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 # Create your models here.
 
@@ -14,5 +15,17 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+class Article(models.Model):
+    title = models.CharField(max_length=255)
+    content = HTMLField()
+    is_featured = models.BooleanField(default=False)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="articles")
+    slug = models.SlugField(unique=True, blank=True,null=True)
+
+    def __str__(self):
+        return self.title
+
+    
 
     
