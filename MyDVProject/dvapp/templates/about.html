@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
 {% block content %}
+
 
 <div class="container py-5">
     <div class="row align-items-start">
