@@ -65,7 +65,7 @@
       {% for article in page_obj %}
         {% if article.is_featured %}
           <li class="article-item">
-            <div class="article-title"><a href="#">{{ article.title }}</a></div>
+            <div class="article-title"><a href="{% url 'article_detail' article.slug %}">{{ article.title }}</a></div>
             <span class="article-category">{{ article.category }}</span>
           </li>
         {% endif %}
@@ -87,7 +87,7 @@
     <ul class="articles-list list-unstyled text-center">
       {% for article in page_obj %}
         <li class="article-item">
-          <div class="article-title"><a href="#">{{ article.title }}</a></div>
+          <div class="article-title"><a href="{% url 'article_detail' article.slug %}">{{ article.title }}</a></div>
           <span class="article-category">{{ article.category }}</span>
         </li>
       {% endfor %}

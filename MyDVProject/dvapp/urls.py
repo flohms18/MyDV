@@ -7,5 +7,7 @@ urlpatterns = [
     path("glossary",views.glossary, name="glossary"),
     path("about", views.about, name="about"),
     path("category", views.category, name="category"),
-    path('category/<int:category_id>/', views.category_articles, name='category_posts')
+    path('category/<int:category_id>/', views.category_articles, name='category_posts'),
+    path('article/<slug:slug>/', views.article_detail, name='article_detail'),
+    
 ]

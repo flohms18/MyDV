@@ -17,6 +17,12 @@ def index(request):
         'page_obj' : page_obj,
     })
 
+def article_detail(request, slug):
+    article = get_object_or_404(Article, slug=slug)    
+    return render(request, "article_detail.html", {
+        'article': article
+})
+
 def about(request):
     return render(request,'about.html')
 
@@ -51,8 +57,3 @@ def category_articles(request,category_id):
         'articles' : articles
     })
 
-def article_detail(request, slug):
-    article = get_object_or_404(Article, slug=slug)    
-    return render(request, "/article_detail.html", {
-        'article': article
-})
