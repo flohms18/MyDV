@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dvapp',
-    'bootstrap5'
+    'bootstrap5',
+    'tinymce'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+TINYMCE_DEFAULT_CONFIG = {
+    "height": 500,
+    "menubar": True,
+    "plugins": "code",
+    "toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | code",
+    "valid_elements": "*[*]",  # Allow all HTML elements and attributes
+    "valid_styles": "*",  # Allow all styles
+    "extended_valid_elements": "script[*],style[*]",  # Allow script and style tags
+    "cleanup": False,  # Disable cleanup to prevent HTML stripping
+    "verify_html": False,  # Disable verification to prevent stripping HTML
+}
