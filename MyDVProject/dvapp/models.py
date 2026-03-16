@@ -1,5 +1,6 @@
 from django.db import models
 from tinymce.models import HTMLField
+from django.utils import timezone
 
 # Create your models here.
 
@@ -21,6 +22,7 @@ class Article(models.Model):
     content = HTMLField()
     is_featured = models.BooleanField(default=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="articles")
+    published_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True, blank=True,null=True)
 
     def __str__(self):
