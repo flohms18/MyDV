@@ -30,7 +30,7 @@ def glossary(request):
             glossary_dict[FirstLetter] = []
         glossary_dict[FirstLetter].append(term)
 
-    return render(request, 'dataverse/glossary.html', {
+    return render(request, 'glossary.html', {
         'glossary_dict': glossary_dict})
 
 def about(request):

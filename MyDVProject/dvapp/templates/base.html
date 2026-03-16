@@ -15,7 +15,7 @@
         <header>
 <nav class="navbar navbar-info navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">DATAVERSE</a>
+    <a class="navbar-brand" href="{% url 'index' %}">DATAVERSE</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,13 +23,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="{% url 'about' %}">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Glossary</a>
+          <a class="nav-link" href="{% url 'glossary' %}">Glossary</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Linkedin</a>
+          <a class="nav-link" href="https://shorturl.at/FVO0A">Add me on Linkedin!</a>
         </li>
       </ul>
     </div>
