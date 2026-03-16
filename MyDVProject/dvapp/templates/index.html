@@ -60,44 +60,62 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <ul class="articles-list list-unstyled text-center">
+  <div class="col-12 col-md-8 col-lg-6">
+    <ul class="articles-list list-unstyled text-center">
+      {% for article in page_obj %}
+        {% if article.is_featured %}
           <li class="article-item">
-              <div class="article-title"><a href="#">Title</a></div>
-              <span class="article-category">Data Lab</span>
+            <div class="article-title"><a href="#">{{ article.title }}</a></div>
+            <span class="article-category">{{ article.category }}</span>
           </li>
-          <li class="article-item">
-              <div class="article-title"><a href="#">Title</a></div>
-              <span class="article-category">Data University</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Recent Posts -->
-    <div class="row justify-content-center mb-4 mt-5">
-      <div class="col-12 col-md-6 text-center">
-        <h2 class="post-section-title">Recent Posts</h2>
-        <div class="mid-divider mx-auto"></div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <ul class="articles-list list-unstyled text-center">
-          <li class="article-item">
-              <div class="article-title"><a href="#">Title</a></div>
-              <span class="article-category">Data Lab</span>
-          </li>
-          <li class="article-item">
-              <div class="article-title"><a href="#">Title</a></div>
-              <span class="article-category">Data University</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
+</div>
+
+<!-- Recent Posts -->
+<div class="row justify-content-center mb-4 mt-5">
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="post-section-title">Recent Posts</h2>
+    <div class="mid-divider mx-auto"></div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-12 col-md-8 col-lg-6">
+    <ul class="articles-list list-unstyled text-center">
+      {% for article in page_obj %}
+        <li class="article-item">
+          <div class="article-title"><a href="#">{{ article.title }}</a></div>
+          <span class="article-category">{{ article.category }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">First</a>
+                <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            {% endif %}
+    
+            {% for num in page_obj.paginator.page_range %}
+                {% if num == page_obj.number %}
+                    <span class="current">{{ num }}</span>
+                {% else %}
+                    <a href="?page={{ num }}">{{ num }}</a>
+                {% endif %}
+            {% endfor %}
+    
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+            {% endif %}
+        </span>
+    </div>
 </section>
 
 

@@ -112,3 +112,50 @@ body {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.step-links {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.step-links a,
+.step-links .current {
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.step-links a {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #1E2735;
+}
+
+.step-links a:hover {
+    background-color: #5562ea;
+    font-family: 'Poppins',sans-serif;
+    color: #f8f9fa;
+
+}
+
+.step-links .current {
+
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #5562ea;
+}
