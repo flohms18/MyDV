@@ -67,3 +67,48 @@ body {
     margin: 16px auto;
     display: block;
 }
+
+.article-item {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* centers title and category */
+}
+
+.article-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: #5562EA;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.article-title a:hover {
+    color: #3c4bc9;
+}
+
+.article-category {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    color: #1E2735;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+}
+
+/* Optional: center the divider under section titles */
+.mid-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #5562EA;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
