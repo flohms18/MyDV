@@ -4,3 +4,7 @@
     --white-color : #f8f9fa;
 
 }
+
+html, body {
+    background-color: var(--white-color);
+}

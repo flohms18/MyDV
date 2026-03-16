@@ -1,20 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block extra_css %}
-  <link rel="stylesheet" href="{% static 'css/about.css' %}">
-{% endblock %}
-
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-6 bg-primary">
-            <h1>JACK</h1>
+<div class="container py-5">
+    <div class="row align-items-start">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <img src="{% static 'images/Designer.png' %}" 
+                 class="img-fluid" 
+                 alt="Designer">
         </div>
+
+       
+        <div class="col-lg-6 col-md-12">
+            <h2 class="fw-bold mb-3 text-center">About Our Designer</h2>
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
     </div>
 </div>
 
-
-{% endblock content %}
-
+{% endblock %}
