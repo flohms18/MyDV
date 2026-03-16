@@ -4,3 +4,32 @@
     --white-color : #f8f9fa;
 
 }
+
+.alphabet-nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    background-color: #f1f1f1;
+    color: #1E2735;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.alphabet-nav a:hover {
+    background-color: #5562EA;
+    color: #f8f9fa;
+
+}
+.glossary-item {
+    color: #1E2735;
+    font-family: 'Poppins',sans-serif;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.letter-item {
+    color: #1E2735;
+    font-family: 'Poppins',sans-serif;
+
+}
