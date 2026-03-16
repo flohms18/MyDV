@@ -13,3 +13,95 @@
 body {
     background-color: var(--white-color);
 }
+
+/* Footer Styling */
+.footer-section {
+    background-color: #1E2735;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+/* Title Styling */
+.footer-title {
+    font-size: 5.8rem;
+    font-weight: bold;
+    color: #5562EA;
+}
+
+/* Text Styling */
+.footer-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #f8f9fa;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-subtitle {
+    color: #5562EA;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.footer-links ul li a:hover {
+    color: #5562EA;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+/* LinkedIn Icon */
+.footer-social .social-icons {
+    margin: 10px 0;
+}
+
+.footer-social .social-icons a {
+    color: #f8f9fa;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #0077b5;
+}
+
+/* Contact Email */
+.footer-contact a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.footer-contact a:hover {
+    color: #5562EA;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+    font-family: 'Poppins',sans-serif;
+
+}

@@ -3,6 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% load bootstrap_icons %}
         {% load bootstrap5 %}
         {% bootstrap_css %}
         {% bootstrap_javascript %}
@@ -37,8 +38,29 @@
 </nav>
         </header>
         {% block content %}{% endblock content %}
-        <footer>
-            This is my footer
-        </footer>
+        <footer class="footer-section text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 footer-links mx-auto">
+                <h4 class="footer-subtitle fw-bold">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'glossary'%}">Glossary</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 footer-social mx-auto">
+                <h4 class="footer-subtitle fw-bold">Add me on Linkedin</h4>
+                <div class="social-icons mt-4">
+                    <a href="https://www.linkedin.com/in/florent-trouillet/" target="_blank">
+                        <i>{% bs_icon 'linkedin' color='#5562EA' size='1.5em'%}</i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
     </body>
 </html>

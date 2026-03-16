@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dvapp',
     'bootstrap5',
-    'tinymce'
+    'tinymce',
+    'django_bootstrap_icons'
 ]
 
 MIDDLEWARE = [
