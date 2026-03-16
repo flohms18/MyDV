@@ -36,10 +36,17 @@ def glossary(request):
 def about(request):
     return render(request, 'about.html')
 
+def category(request):
+    categories = Category.objects.all()  
+    return render(request, "category.html", {
+        'categories': categories
+    })
+
+
 def category_articles(request,category_id):
     category = get_object_or_404(Category, id=category_id)
     articles = Article.objects.filter(category=category).order_by('published_at')
-    return render(request,'category.html', {
+    return render(request,'index.html', {
         'category' : category,
         'articles' : articles
     })
