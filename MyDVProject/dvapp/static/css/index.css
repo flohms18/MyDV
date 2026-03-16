@@ -71,7 +71,7 @@ body {
 .article-item {
     padding: 20px;
     border-bottom: 1px solid #ddd;
-    text-align: center; /* centers title and category */
+    text-align: center;
 }
 
 .article-title {
@@ -104,7 +104,7 @@ body {
     border-radius: 20px;
 }
 
-/* Optional: center the divider under section titles */
+
 .mid-divider {
     width: 60px;
     height: 3px;
