@@ -1,6 +1,10 @@
-{% extends "dataverse/base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/article_detail.css' %}">
+{% endblock %}
+
 
 
 
