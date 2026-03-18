@@ -23,6 +23,20 @@ def article_detail(request, slug):
         'article': article
 })
 
+def category_detail(request, slug):
+    category = get_object_or_404(Category, slug=slug)
+    articles_list = Article.objects.filter(category=category).order_by('-published_at')
+    
+    paginator = Paginator(articles_list, 5)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    
+    return render(request, "category_detail.html", {
+        'category': category,
+        'page_obj': page_obj,
+    })
+
+
 def about(request):
     return render(request,'about.html')
 
